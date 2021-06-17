@@ -18,3 +18,5 @@ After you're finished with the changes, save it.
 Initialize terraform by running the command "terraform init".
 
 After the initialization is concluded, run "terraform plan" to visualize the changes and finally "terraform apply" to deploy the infrastructure.
+
+Once the training is finished, remember to destroy your infrascture. You can do it by typing "terraform destroy"
