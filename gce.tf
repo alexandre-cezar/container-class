@@ -2,9 +2,10 @@
 
 # Create the Instance
 resource "google_compute_instance" "vm-docker" {
-  name         = "vm-docker"
+  name         = "vm-docker-${count.index + 1}"
   machine_type = var.docker_machine_size
   zone         = var.zone_name
+  count         = var.instance_count
 
   boot_disk {
     initialize_params {

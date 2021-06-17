@@ -29,3 +29,8 @@ variable "image_name" {
   description = "VM image name"
   default     = "ubuntu-os-cloud/ubuntu-2004-lts"
 }
+
+variable "instance_count" {
+  default = "2"
+}
+
