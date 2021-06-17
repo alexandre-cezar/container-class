@@ -33,14 +33,14 @@ resource "google_compute_firewall" "docker-ssh" {
 }
 
 # Create the Google Firewall Policies that allows HTTP to the  instance
-resource "google_compute_firewall" "docker-http" {
-  name    = "allow-http-docker"
+resource "google_compute_firewall" "docker-app" {
+  name    = "allow-http-app"
   network = var.project_name
   priority = 200
 
   allow {
     protocol = "tcp"
-    ports    = ["80"]
+    ports    = ["3000"]
   }
 
   # Allow traffic from anywhere to instances with a docker tag
