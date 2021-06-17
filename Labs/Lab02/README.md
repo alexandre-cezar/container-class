@@ -11,7 +11,7 @@ As you may have noticed, we're inside the container now.
 Run the command "head -1 /etc/mtab", which exposes the host file system path of container mounts to the container itself. 
 The host file system path here would be something similar to "/var/lib/docker/overlay2/feee143c8cabf326a8b1b79663f12e55062493da30b46166b46de7d832d1894b/diff"
 
-Now let's create a new file in this mount by issuing the command "echo "I am a bad container" > /findme and "sed -n 's/.*\perdir=\([^,]*\).*/\1\/findme/p' /etc/mtab"
+Now let's create a new file in this mount by issuing the command "echo "I am a bad container" > /findme and after it, run the command "sed -n 's/.*\perdir=\([^,]*\).*/\1\/findme/p' /etc/mtab"
 
 Finally, let's see the file at the host. From your second SSH terminal on the container host, using the overlayfs mount path to cat the file,
 run the command "sudo cat "your host file system path"/findme" and check the command response.
