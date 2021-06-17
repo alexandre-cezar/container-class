@@ -6,7 +6,7 @@ Now, from the Lab02 folder, run the command "docker build -t badcontainer:1.0 ."
 
 Let's start our container by running "docker run -ti --privileged --rm badcontainer:1.0 /bin/sh"
 
-As you noticed, we're inside the container now.
+As you may have noticed, we're inside the container now.
 
 Run the command "head -1 /etc/mtab", which exposes the host file system path of container mounts to the container itself. 
 The host file system path here would be something similar to "/var/lib/docker/overlay2/feee143c8cabf326a8b1b79663f12e55062493da30b46166b46de7d832d1894b/diff"
