@@ -1,6 +1,6 @@
 Let's build our fist container.
 
-From inside the Lab01 folder, run the command "docker build -t webapp:1.0 ."
+From inside the Lab01/application folder, run the command "docker build -t webapp:1.0 ."
 
 After the application is finished, run the command "docker image ls" to review the images in your environment
 
