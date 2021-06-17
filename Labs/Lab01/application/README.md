@@ -6,4 +6,4 @@ After the application is finished, run the command "docker image ls" to review t
 
 Now, let's start our application by running "docker run -dp 3000:3000 webapp:1.0"
 
-Go to your browser and navigate to your public instance IP and set the port to 3000, like "http://<Instance Public IP>:3000" to open your app.
+Go to your browser and navigate to your public instance IP and set the port to 3000, like "http://"Instance Public IP":3000" to open your app.
