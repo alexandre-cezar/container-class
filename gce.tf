@@ -27,7 +27,7 @@ resource "google_compute_instance" "vm-docker" {
         apt install -y apt-transport-https ca-certificates curl software-properties-common npm
         curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
         apt-get -y update
-        apt-get -y install docker.io containerd docker-compose
+        apt-get -y install docker.io containerd
         systemctl enable docker.service
         systemctl enable containerd.service
         systemctl start docker.service
