@@ -3,9 +3,10 @@ Container Class
 
 This repo is intended for use in the container concepts class.
 
-To get started, simply follow the GCP instructions [here](https://cloud.google.com/free) to create a free project and after your new project is create, add a SSH key to the project instance metadata. You can find the proper instructions [here](https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys)
+To get started, simply follow the GCP instructions [here](https://cloud.google.com/free) to create a free project and after your new project is create, add a SSH key to the project instance metadata. You can find the proper instructions [here](https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys).
+You also need to create a [Service Account](https://cloud.google.com/iam/docs/creating-managing-service-accounts) with Compute Admin permissions, generate a json key and upload it to the terraform folder.
 
-On your GCP console, active the Cloud Shell and once it activates, clone this project by running the command "git clone https://github.com/alexandre-cezar/container-class"
+Once you're done with the pre-tasks, naviagate to your GCP console, active the Cloud Shell and once it activates, clone this project by running the command "git clone https://github.com/alexandre-cezar/container-class"
 
 Navigate to the project folder and open the variables file using a text editor (vim).
 
