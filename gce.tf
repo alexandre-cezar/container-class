@@ -32,6 +32,7 @@ resource "google_compute_instance" "vm-docker" {
         systemctl enable containerd.service
         systemctl start docker.service
         systemctl start containerd.service
+        usermod -aG docker container
         SCRIPT
 
   labels = {
